@@ -1,5 +1,8 @@
-function clicar() {
-   carregar = new Image();
-   carregar.src = img;
-   document.getElementById("clicar").innerHTML = "<img src=https://img.elo7.com.br/product/original/25658AB/adesivo-loading-carregando-parede-quarto-cama-sala-hd-adesivo-cama-casal-divertida.jpg>"
+function carregadoSucesso() {
+    document.getElementById("paragrafo").innerHTML = "Carregado com sucesso."
+}
+
+function carregar() {
+    document.getElementById("paragrafo").innerHTML = "<img src='https://www12.senado.leg.br/jovemsenador/home/imagens/carregando/image'/>"
+    setTimeout(carregadoSucesso, 500);
 }
